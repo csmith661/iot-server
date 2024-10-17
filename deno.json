@@ -1,0 +1,13 @@
+{
+  "tasks": {
+    "dev": "deno run --watch --allow-read --allow-sys --allow-env --allow-net main.ts"
+  },
+  "imports": {
+    "@std/dotenv": "jsr:@std/dotenv@^0.225.0",
+    "@std/encoding": "jsr:@std/encoding@^1.0.1",
+    "dayjs": "npm:dayjs@1.11.11",
+    "djwt": "https://deno.land/x/djwt@v3.0.2/mod.ts",
+    "event_emitter": "https://deno.land/x/eventemitter@1.2.4/mod.ts"
+
+  }
+}

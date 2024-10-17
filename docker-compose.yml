@@ -1,0 +1,10 @@
+version: "0.1"
+
+services:
+  web:
+    image: docker.bayviewphysicians.com/bayview-it/iot-server:latest
+    build: .
+    container_name: deno-container
+    ports:
+      - "${SERVER_PORT-4000}:${SERVER_PORT-4000}"
+    env_file: stack.env

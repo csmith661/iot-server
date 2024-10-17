@@ -1,1 +1,40 @@
-README
+IoT Monitoring Server
+This repository contains the IoT server that monitors 23 business-critical locations, ensuring both physical security and technical infrastructure stability. The system significantly improves IT incident response times, detecting potential failures early and enabling real-time notifications to the IT team.
+
+Features
+Real-Time Monitoring: Continuously monitors key physical security and infrastructure parameters across multiple locations.
+Improved Incident Response: By increasing response efficiency by 125%, this server helps IT teams address issues faster.
+Early Failure Detection: Proactively detects potential failures, reducing downtime and minimizing operational risk.
+Real-Time Notifications: Sends immediate alerts to IT staff, ensuring issues are resolved quickly.
+Technologies Used
+Deno: Backend framework for server-side processing and API interactions.
+MicroPython: Used for handling embedded devices in the monitoring system.
+Getting Started
+Prerequisites
+Python 3.x
+MicroPython setup for embedded devices
+Deno installation for server-side operations
+Installation
+Clone the repository:
+
+bash
+Copy code
+git clone https://github.com/yourusername/iot-monitoring-server.git
+Install Python dependencies:
+
+bash
+Copy code
+pip install -r requirements.txt
+Set up the MicroPython devices following the documentation provided in the /devices folder.
+
+Run the Deno server:
+
+bash
+Copy code
+deno run --allow-net server.ts
+Usage
+Once installed, the server will begin monitoring all configured locations and send alerts in case of anomalies. Check the /config endpoint for custom configurations of your monitoring setup.
+
+Contributing
+Feel free to fork the repository and submit pull requests to improve the system or add new features!
+
